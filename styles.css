@@ -66,6 +66,24 @@ button:focus {
 .first-card-container:hover .first-card {
   display: none;
 }
+.first-card {
+  position: relative;
+  animation-name: abc;
+  animation-duration: 0.5s;
+  /* animation-delay: 1s; */
+  /* animation-fill-mode: forwards; */
+}
+
+@keyframes abc {
+  0% {
+    top: -20px;
+    opacity: 0;
+  }
+  100% {
+    top: 50px;
+    opacity: 100%;
+  }
+}
 
 .first-card-container {
   padding: 10px;
